@@ -1,9 +1,9 @@
 """Programa principal: simula las operaciones del sistema Software FJ sin base de datos."""  # Docstring
-from cliente import Cliente  # Clase de clientes
-from excepciones import ErrorSoftwareFJ  # Excepción base del sistema
-from reserva import Reserva  # Clase de reservas
-from servicios import AlquilerEquipo, AsesoriaEspecializada, ReservaSala  # Servicios concretos
-import logger  # Registro de eventos y errores
+from gestion.cliente import Cliente  # Clase de clientes
+from gestion.excepciones import ErrorSoftwareFJ  # Excepción base del sistema
+from gestion.reserva import Reserva  # Clase de reservas
+from gestion.servicios import AlquilerEquipo, AsesoriaEspecializada, ReservaSala  # Servicios concretos
+from gestion import logger  # Registro de eventos y errores
 
 
 class SistemaFJ:  # Administra las listas internas de entidades
