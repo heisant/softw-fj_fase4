@@ -12,13 +12,14 @@ Requiere Python 3.8 o superior. No usa librerías externas.
 ## Estructura
 | Archivo | Contenido |
 |---|---|
-| `excepciones.py` | Jerarquía de excepciones personalizadas (`ErrorSoftwareFJ` y derivadas) |
-| `logger.py` | Configuración del log de eventos y errores |
-| `entidades.py` | Clase abstracta `EntidadBase` |
-| `cliente.py` | `Cliente` con atributos privados y validaciones |
-| `servicios.py` | `Servicio` (abstracta), `ReservaSala`, `AlquilerEquipo`, `AsesoriaEspecializada` |
-| `reserva.py` | `Reserva` con procesar, confirmar y cancelar |
-| `main.py` | Simulación de 18 operaciones válidas e inválidas |
+| `main.py` | Simulación de 18 operaciones válidas e inválidas (punto de entrada) |
+| `gestion/__init__.py` | Archivo vacío que convierte la carpeta `gestion` en un paquete |
+| `gestion/excepciones.py` | Jerarquía de excepciones personalizadas (`ErrorSoftwareFJ` y derivadas) |
+| `gestion/logger.py` | Configuración del log de eventos y errores |
+| `gestion/entidades.py` | Clase abstracta `EntidadBase` |
+| `gestion/cliente.py` | `Cliente` con atributos privados y validaciones |
+| `gestion/servicios.py` | `Servicio` (abstracta), `ReservaSala`, `AlquilerEquipo`, `AsesoriaEspecializada` |
+| `gestion/reserva.py` | `Reserva` con procesar, confirmar y cancelar |
 
 ## Conceptos aplicados
 - **Abstracción:** `EntidadBase` y `Servicio` son clases abstractas (`ABC`).
